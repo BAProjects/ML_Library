@@ -8056,10 +8056,10 @@ Given is the attribute name, attribute type, the measurement unit and a brief de
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># creating feature values for prediction</span>
-<span class="n">new_website_features</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">35.1</span><span class="p">,</span><span class="mf">11.8</span><span class="p">,</span><span class="mf">4.65</span><span class="p">,</span><span class="mf">6.3</span><span class="p">,</span><span class="mi">310</span><span class="p">,</span><span class="mf">25.4</span><span class="p">,</span><span class="mf">33.6</span><span class="p">,</span><span class="mf">75.5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
+<span class="n">predictors</span> <span class="o">=</span> <span class="p">[[</span><span class="mf">35.1</span><span class="p">,</span><span class="mf">11.8</span><span class="p">,</span><span class="mf">4.65</span><span class="p">,</span><span class="mf">6.3</span><span class="p">,</span><span class="mi">310</span><span class="p">,</span><span class="mf">25.4</span><span class="p">,</span><span class="mf">33.6</span><span class="p">,</span><span class="mf">75.5</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]]</span>
 
 <span class="c1"># making a prediction on the created feature values</span>
-<span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">new_website_features</span><span class="p">)</span>
+<span class="n">pred</span> <span class="o">=</span> <span class="n">model</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">predictors</span><span class="p">)</span>
 
 
 <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s1">'Based on the entered values, the model predicts the patient should have a </span><span class="si">{</span><span class="n">pred</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="si">}</span><span class="s1"> patient visit next time'</span><span class="p">)</span>
@@ -8097,7 +8097,7 @@ Given is the attribute name, attribute type, the measurement unit and a brief de
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Function to display model confusion_matrix</span>
@@ -8115,7 +8115,7 @@ Given is the attribute name, attribute type, the measurement unit and a brief de
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># getting predictions for the testing data</span>
